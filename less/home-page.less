@@ -1,7 +1,7 @@
 // Home Content
 
 .home {
-
+  
   .intro {
     
     img {
@@ -20,12 +20,20 @@
 
   .space-images {
     .space-image-style();
-
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone {
+      img:not(:first-child) {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -47,7 +55,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    
     .walk-text {
       width: 50%;
 
@@ -72,6 +80,20 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+    @media @phone {
+      flex-direction: column-reverse;
+      .walk-text {
+        width: 100%;
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+      .walk-img {
+        width: 100%;
+      }
+      
     }
   }
 }// home
