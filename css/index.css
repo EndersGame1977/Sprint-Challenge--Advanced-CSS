@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.9rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,20 +158,43 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #F6F6F6;
+  border: 2px solid #F1F1F1;
+  padding: 15px;
+}
+nav .logo {
+  margin-bottom: 20px;
+}
+nav .nav-bar a {
+  padding: 15px;
+  color: #454A59;
+}
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +237,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;

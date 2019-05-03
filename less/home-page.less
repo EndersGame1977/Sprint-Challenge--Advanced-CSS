@@ -3,7 +3,11 @@
 .home {
 
   .intro {
-
+    
+    img {
+      border-radius: 5px;
+    }
+    
     h2 {
       padding: 15px;
     }
@@ -15,9 +19,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .space-image-style();
 
     img {
       width: 28%;
@@ -58,12 +60,12 @@
       }
 
       .btn {
+        .btn-style();
       }
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
+      .walk-img-style();      
       
       img {
         width: 100%;
