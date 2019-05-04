@@ -1,1 +1,25 @@
 // Mixins Here
+.btn-style(@bg-color: black; @font-color: white;) {
+    display: flex;
+    justify-content: flex-start;
+    background-color: @bg-color;
+    font-size: 2rem;
+    color: @font-color;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90px;
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
+}
+
+.space-image-style() {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.walk-img-style() {
+    width: 46%;
+    margin-left: 4%;
+}
